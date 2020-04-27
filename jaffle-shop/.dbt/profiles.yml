@@ -1,0 +1,13 @@
+jaffle_shop:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      keyfile: /Users/aldwallis/Downloads/dbt-user-creds.json
+      project: projectdbt
+      dataset: dbt_awallis
+      threads: 1
+      timeout_seconds: 300
+      location: US
+      priority: interactive
